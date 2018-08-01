@@ -1,11 +1,34 @@
 {% extends 'layout.html' %}
 
 {% block body%}
-  <div class="jumbotron text-center"> <!--jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.-->
-    <h1>Welcome To Tradeshift</h1>
-    <p class="lead">This application is built on Python Flask Framework</p>
+  <div class="jumbotron text-center "> <!--jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.-->
+  <h1> <img src="https://ok2static.oktacdn.com/bc/image/fileStoreRecord?id=fs0d6gmquuO9LX87h0x7" alt="rakesh" border="0">
+    <p class="lead">This application is built on Python Flask Framework</p><h1>
+      <p class="lead"> < !-- ad java here --></p>
   </div>
+<body>
+  <fieldset>
+    <div class="text-center">
+    <legend>Sign in</legend>
 
+    <div>
+      <!--  <label for="userName">Username:</label> -->
+        <input type="text" id="username" name="username"
+               required placeholder ="Username"/>
+    </div>
+
+    <div>
+      <!--  <label for="password">Password:</label> -->
+        <input type="password" id="password" name="password"
+               minlength="8" required
+               placeholder="Password" />
+
+  </div>
+  
+  <input type="submit" value="Sign in">
+
+</fieldset>
+</body>
 {% endblock %}
 
 
