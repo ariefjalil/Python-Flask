@@ -1,5 +1,4 @@
 {% extends 'layout.html' %}
-
 {% block body %}
   <h1>Register</h1>
   {% from "PythonFlask/myFlaskApp/templates/includes/_formhelpers.html" import render_field %}
@@ -20,5 +19,5 @@
       {{render_field(form.confirm, clas_="form-control")}}
     </div>
     <p><input type="submit" class="btn btn-primary" value="Submit"></p>
-  <form>
+  </form>
 {% endblock %}
