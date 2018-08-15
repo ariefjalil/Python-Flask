@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 {% block body %}
   <h1>Register</h1>
-  {% from "PythonFlask/myFlaskApp/templates/includes/_formhelpers.html" import render_field %}
+  {% from "includes/_formhelpers.html" import render_field %}
   <form method = "POST" action=" ">
     <div class = "form-group">
       {{render_field(form.name, clas_="form-control")}}
