@@ -60,12 +60,14 @@ def register():
         # Commit to DB
         mysql.connection.commit()
 
-        #Close connection
+        #Close connection to DB
         cur.close()
 
         flash('You are now registered and can log in', 'success')
 
-        return render_template('register.html')
+
+        redirect(url_for('index'))
+
     return render_template('register.html',form=form)
 
 
