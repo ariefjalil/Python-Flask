@@ -54,7 +54,7 @@ def register():
         # Create cursor
         cur = mysql.connection.cursor()
 
-
+        #execute query
         cur.execute("INSERT INTO user(name,  email, username, password) VALUES(%s, %s, %s, %s)", (name, email, username, password))
 
         # Commit to DB
